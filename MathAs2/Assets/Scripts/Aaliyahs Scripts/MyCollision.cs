@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CustomCollision : MonoBehaviour
+public class MyCollision : MonoBehaviour
 {
     public float width = 1f;
     public float height = 1f;
@@ -33,7 +33,7 @@ public class CustomCollision : MonoBehaviour
             if (otherObject == gameObject || otherObject.CompareTag("MainCamera"))
                 continue;
 
-            if (CustomCollision.Overlap2D(gameObject, otherObject))
+            if (MyCollision.Overlap2D(gameObject, otherObject))
             {
                 HandleCollisionResponse(otherObject);
                 return;
