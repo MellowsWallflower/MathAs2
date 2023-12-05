@@ -280,7 +280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gravity: 9.8
   Mass: 30
-  Ground: {fileID: 219010378}
+  Velocity: 0
+  Ground: {fileID: 1554614888}
 --- !u!70 &21331705
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -557,7 +558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gravity: 9.8
   Mass: 15
-  Ground: {fileID: 1554614888}
+  Velocity: 0
+  Ground: {fileID: 219010378}
 --- !u!58 &331009783
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -842,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gravity: 9.8
   Mass: 10
+  Velocity: 0
   Ground: {fileID: 1517961408}
 --- !u!61 &1206099170
 BoxCollider2D:

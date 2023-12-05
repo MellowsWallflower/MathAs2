@@ -6,7 +6,7 @@ public class GravitationalForce : MonoBehaviour
 {
     public float Gravity = 9.8f;
     public float Mass;
-    float Velocity;
+    public float Velocity;
     float Resistance = 0;
     public GameObject Ground;
 
@@ -35,7 +35,9 @@ public class GravitationalForce : MonoBehaviour
         }
         else if (gameObject.transform.position.y <= Ground.transform.position.y + Ground.transform.localScale.y)
         {
-            Velocity = 0;
+
+               Velocity = 0;
+            
         }
         
     }
